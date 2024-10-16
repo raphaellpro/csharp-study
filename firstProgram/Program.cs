@@ -207,8 +207,21 @@ class Program {
 
 
         // Class 06 - Exercise
+        // 01
 
+        Console.WriteLine("Enter the total number of toys: ");
+        int nToys = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter the total number of children in the group: ");
+        int tKids = Convert.ToInt32(Console.ReadLine());
+        int toysPerKid = nToys / tKids;
+        int toysLeft = nToys % tKids;
         
+        Console.WriteLine("Below are resume the donation: ");
+        Console.WriteLine("Total Toys: " + nToys);
+        Console.WriteLine("Total Children: " + tKids);
+        Console.WriteLine("Toys Per Child: " + toysPerKid);
+        Console.WriteLine("Toys Left: " + toysLeft);
+
 
         // Class 07 - Assignment
 
