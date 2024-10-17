@@ -1,0 +1,14 @@
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\bin\Debug\net8.0\TextHello.exe
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\bin\Debug\net8.0\TextHello.deps.json
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\bin\Debug\net8.0\TextHello.runtimeconfig.json
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\bin\Debug\net8.0\TextHello.dll
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\bin\Debug\net8.0\TextHello.pdb
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.AssemblyInfoInputs.cache
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.AssemblyInfo.cs
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.csproj.CoreCompileInputs.cache
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.dll
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\refint\TextHello.dll
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.pdb
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\TextHello.genruntimeconfig.cache
+C:\Users\supor\OneDrive\#DIGITAL_PRO\Projetos\Didático\C#\TextHello\obj\Debug\net8.0\ref\TextHello.dll
