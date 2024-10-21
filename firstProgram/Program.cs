@@ -207,7 +207,7 @@ class Program {
 
 
         // Class 06 - Exercise
-        // 01
+        // 01 (ok)
 
         Console.WriteLine("Enter the total number of toys: ");
         int nToys = Convert.ToInt32(Console.ReadLine());
@@ -222,8 +222,130 @@ class Program {
         Console.WriteLine("Toys Per Child: " + toysPerKid);
         Console.WriteLine("Toys Left: " + toysLeft);
 
+        // 02 (ok)
+
+        Console.WriteLine("Enter your balance below: ");
+        int balance = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter your expense 1 below: ");
+        int expense1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter your expense 2 below: ");
+        int expense2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter your expense 3 below: ");
+        int expense3 = Convert.ToInt32(Console.ReadLine());
+
+        int result = balance - (expense1 + expense2 + expense3);
+
+        Console.WriteLine("This is your updated balance: " + result);
+
+        // Solved exercise
+        float saldo, gasto1, gasto2, gasto3;
+        Console.WriteLine("Digite o saldo total");
+        saldo = float.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o gasto 1");
+        gasto1 = float.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o gasto 2");
+        gasto2 = float.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o gasto 3");
+        gasto3 = float.Parse(Console.ReadLine());
+        saldo = saldo - gasto1 - gasto2 - gasto3;
+        Console.WriteLine("O saldo final é de R$" + saldo);
+
 
         // Class 07 - Assignment
+        string nome = "Aprendendo";
+        int idade = 19;
+        idade -= 5;
+        idade = idade + 5;
+        // ou
+        idade += 5;
+
+        // Class 08 - Increment and Decrement
+        string nome = "Aprendendo";
+        int idade = 19;
+        idade = idade + 19;
+        idade++; //idade = 20
+        idade--; //idade = 19
+        int idade = 19;
+        int NovaIdade;
+        NovaIdade = idade++; //novaIdade = 19, idade = 20
+        NovaIdade = ++idade; // novaIdade = 21, idade = 21
+
+        // Class 08 - Exercises
+        //01 (ok)
+        
+        int intValue, newValue = 0;
+        Console.WriteLine("Enter an integer value: ");
+        intValue = Int16.Parse(Console.ReadLine());
+        newValue += intValue;
+        newValue++;
+        newValue++;
+        Console.WriteLine("The new value is: " + newValue);
+        Console.WriteLine("The old value is: " + intValue);
+
+        // Solved Exercise
+        int var1, var2 = 0;
+        Console.WriteLine("Digite o valor da variavel");
+        var1 = Int16.Parse(Console.ReadLine());
+        var2 += var1;
+        var2++;
+        var2++;
+        Console.WriteLine(var2 + " " + var1);
+
+        // 02 (ok)
+
+        Faça um programa que leia do teclado um valor inteiro e em seguida, usando o decremento, reduza o número lido em 3 unidades, ao final imprima a variável.
+
+        int intValue, newValue = 0;
+        Console.WriteLine("Enter an integer value: ");
+        intValue = Int16.Parse(Console.ReadLine());
+        newValue += intValue;
+        newValue--;
+        newValue--;
+        Console.WriteLine("The new value is: " + newValue);
+        Console.WriteLine("The old value is: " + intValue);
+
+        // Class 09 - Comparison Operators
+
+        int age = 20;
+        bool isAdult;
+        age == 18;
+
+        // Class 09 - Exercises
+        // 01 (ok)
+
+        float height, minHeight = 1.50f;
+
+        Console.WriteLine("Enter your height: ");
+        height = float.Parse(Console.ReadLine());
+
+        if (height >= minHeight)
+        {
+            Console.WriteLine("You are allowed to enter the bar");
+        }
+        else
+        {
+            Console.WriteLine("You are not allowed to enter the bar");
+        }
+
+        // Solved Exercise
+
+        float altura;
+        bool minima;
+        Console.WriteLine("Digite a altura");
+        altura = float.Parse(Console.ReadLine());
+        minima = altura >= 1.50;
+
+        // 02
+        Faça um programa que leia do teclado um valor inteiro correspondente a idade de um possível aluno da Codi Academy, depois faça uma comparação com a idade mínima necessária (14 anos) e atribua este resultado a uma variável lógica.
+
+        
+
+
+
+
 
     }
 }
