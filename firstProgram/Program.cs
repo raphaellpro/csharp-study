@@ -296,8 +296,6 @@ class Program {
 
         // 02 (ok)
 
-        Faça um programa que leia do teclado um valor inteiro e em seguida, usando o decremento, reduza o número lido em 3 unidades, ao final imprima a variável.
-
         int intValue, newValue = 0;
         Console.WriteLine("Enter an integer value: ");
         intValue = Int16.Parse(Console.ReadLine());
@@ -338,13 +336,82 @@ class Program {
         altura = float.Parse(Console.ReadLine());
         minima = altura >= 1.50;
 
-        // 02
-        Faça um programa que leia do teclado um valor inteiro correspondente a idade de um possível aluno da Codi Academy, depois faça uma comparação com a idade mínima necessária (14 anos) e atribua este resultado a uma variável lógica.
+        // 02 (ok!)
 
+        int  ageStudent;
+        bool minAge;
         
+        Console.WriteLine("Enter your age: ");
+        ageStudent = Int16.Parse(Console.ReadLine());
+        minAge = ageStudent >= 14;
+        Console.WriteLine(minAge);
+
+        // Solved Exercise
 
 
+        // Class 10 - Logical Operators
 
+        int age = 20;
+        bool ticket = false;
+        bool permission = true;
+        // bool entryPermitted = age >= 18 || permission = true;
+        // bool entryBlocked = !(age >= 18);
+        // bool entryPermitted = (age >= 18 || permission) && ticket = true;
+        
+        // ! => not (Negation operator)
+
+        // Class 11 - IF and ELSE
+
+        if((age >= 18 || permission) && ticket)
+        {
+            Console.WriteLine("Entry Allowed!");
+        }
+        else if(!ticket){
+            // Console.WriteLine("Entry Blocked");
+            Console.WriteLine("The ticket is missing!");
+        }
+        else {
+            Console.WriteLine("Age or permission denied!");
+        }
+
+        // Class 11 - Exercises
+        // 01 (OK!)
+
+        int ageStudent, minAge = 14;
+
+        Console.WriteLine("Enter your age: ");
+        ageStudent = Int16.Parse(Console.ReadLine());
+
+        if (ageStudent < minAge) {
+            Console.WriteLine("You are not of minimum age!");
+        } else {
+            Console.WriteLine("Welcome to Codi Academy!");        
+        }
+
+        // 02
+
+        Escreva um programa que recebe do teclado 3 valores reais referentes aos lados de um triângulo, e faça os cálculos para verificar se estes três lados são capazes de formar um triângulo (Lembrando que para formar um triângulo a soma de dois lados deve ser maior do que o terceiro), ao final dos cálculos se for possível construir um triângulo com as medidas imprima na tela: “As medidas formam um triângulo”, caso falso imprima a frase: “As medidas NÃO formam um triângulo”.
+
+        float side1, side2, side3, sumSides1, sumSides2, sumSides3;
+
+        Console.WriteLine("Enter side 1: ");
+        side1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter side 2: ");
+        side2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter side 3: ");
+        side3 = float.Parse(Console.ReadLine());
+
+        sumSides1 = side1 + side2;
+        sumSides2 = side1 + side3;
+        sumSides3 = side3 + side2;
+
+        if (sumSides1 > side3 && sumSides2 > side2 && sumSides3 > side1) {
+            Console.WriteLine("The measurements form a triangle!");
+        } else {
+            Console.WriteLine("The measurements DO NOT form a triangle!");
+        }
 
 
     }
