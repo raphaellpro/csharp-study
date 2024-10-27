@@ -388,9 +388,7 @@ class Program {
             Console.WriteLine("Welcome to Codi Academy!");        
         }
 
-        // 02
-
-        Escreva um programa que recebe do teclado 3 valores reais referentes aos lados de um triângulo, e faça os cálculos para verificar se estes três lados são capazes de formar um triângulo (Lembrando que para formar um triângulo a soma de dois lados deve ser maior do que o terceiro), ao final dos cálculos se for possível construir um triângulo com as medidas imprima na tela: “As medidas formam um triângulo”, caso falso imprima a frase: “As medidas NÃO formam um triângulo”.
+        // 02 (OK!)
 
         float side1, side2, side3, sumSides1, sumSides2, sumSides3;
 
@@ -412,6 +410,107 @@ class Program {
         } else {
             Console.WriteLine("The measurements DO NOT form a triangle!");
         }
+
+        // Eliminate unnecessary variables
+
+        float side1, side2, side3;
+
+        Console.WriteLine("Enter side 1: ");
+        side1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter side 2: ");
+        side2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter side 3: ");
+        side3 = float.Parse(Console.ReadLine());
+
+        if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+            Console.WriteLine("The measurements form a triangle!");
+        } else {
+            Console.WriteLine("The measurements DO NOT form a triangle!");
+        }
+
+
+        // Class 12 - Switch
+
+        char semaforo; // g, y, r
+
+        switch (semaforo)
+        {
+            case 'g':
+            // code
+            Console.WriteLine("GO!");
+            break;
+            case 'y':
+            // code
+            Console.WriteLine("ATTENTION!");
+            break;
+            case 'r':
+            // code
+            Console.WriteLine("STOP!");                
+            break;
+        }
+
+        // Class 12 - Exercises
+        // 01
+        Escreva um programa que leia o código de um determinado produto e mostre a sua classificação. Utilize a tabela abaixo como referência:(Código - Descrição)
+        1 Alimento não-perecível
+        2 Alimento perecível
+        3 Vestuário
+        4 Limpeza
+        5 Cosmético
+
+      int product;
+
+      Console.WriteLine("Enter the product code 1 - 5: ");
+      product = Int16.Parse(Console.ReadLine());
+
+      switch (product)
+      {
+        case 1:
+          Console.WriteLine("Non-perishable food");
+          break;
+          case 2:
+          Console.WriteLine("Perishable food");
+          break;
+          case 3:
+          Console.WriteLine("Clothing");
+          break;
+          case 4:
+          Console.WriteLine("Cleaning");
+          break;
+          case 5:
+          Console.WriteLine("Cosmetic");
+          break;
+      }
+
+      // Solved Exercise (12)
+      
+            int codigo;
+      Console.WriteLine("Digite o código do produto");
+      codigo = Int16.Parse(Console.ReadLine());
+      switch (codigo)
+      {
+      case 1:
+      Console.WriteLine("Alimento não perecível");
+      break;
+      case 2:
+      Console.WriteLine("Alimento Perecível");
+      break;
+      case 3:
+      Console.WriteLine("Vestuário");
+      break;
+      case 4:
+      Console.WriteLine("Limpeza");
+      break;
+      case 5:
+      Console.WriteLine("Cosmético");
+      break;
+
+      default:
+      Console.WriteLine("Código inválido");
+      break;
+      }
 
 
     }
