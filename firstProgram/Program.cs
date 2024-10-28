@@ -75,7 +75,7 @@ class Program {
         Console.WriteLine(escola);
 
 
-        //Aula 04 - Exercícios
+        //Aula 04 - Exercises
 
         /*
 
@@ -119,7 +119,7 @@ class Program {
         Console.WriteLine(codigo3+" - "+disciplina3+" - "+nota3);
         Console.WriteLine(codigo4+" - "+disciplina4+" - "+nota4);
 
-        //Exercicio 2 (EU FIZ):
+        //Exercicio 2 (I do!):
         string tipoPao1, tipoPao2, tipoPao3;
         int estoqueTipo1, estoqueTipo2, estoqueTipo3;
         float valorTipo1, valorTipo2, valorTipo3;
@@ -157,7 +157,7 @@ class Program {
         bool b = Convert.ToBoolean();
         char c = Convert.ToChar();
         */
-        //Exercicio 1 - Aula 05 (EU FIZ)
+        //Exercicio 1 - Aula 05 (I do!)
         string meuNome;
         int minhaIdade;
 
@@ -173,7 +173,7 @@ class Program {
 
         Console.WriteLine("Olá, meu nome é " + meuNome + ", tenho " + minhaIdade + " anos e estou estudando C# na Codi Academy!");
 
-        //Exercicio 2 - Aula 05 (EU FIZ)
+        //Exercicio 2 - Aula 05 (I do!)
         string nomeProduto;
         float valorProduto;
 
@@ -207,7 +207,7 @@ class Program {
 
 
         // Class 06 - Exercise
-        // 01 (ok)
+        // 01 (OK!)
 
         Console.WriteLine("Enter the total number of toys: ");
         int nToys = Convert.ToInt32(Console.ReadLine());
@@ -222,7 +222,7 @@ class Program {
         Console.WriteLine("Toys Per Child: " + toysPerKid);
         Console.WriteLine("Toys Left: " + toysLeft);
 
-        // 02 (ok)
+        // 02 (OK!)
 
         Console.WriteLine("Enter your balance below: ");
         int balance = Convert.ToInt32(Console.ReadLine());
@@ -274,7 +274,7 @@ class Program {
         NovaIdade = ++idade; // novaIdade = 21, idade = 21
 
         // Class 08 - Exercises
-        //01 (ok)
+        //01 (OK!)
         
         int intValue, newValue = 0;
         Console.WriteLine("Enter an integer value: ");
@@ -294,7 +294,7 @@ class Program {
         var2++;
         Console.WriteLine(var2 + " " + var1);
 
-        // 02 (ok)
+        // 02 (OK!)
 
         int intValue, newValue = 0;
         Console.WriteLine("Enter an integer value: ");
@@ -312,7 +312,7 @@ class Program {
         age == 18;
 
         // Class 09 - Exercises
-        // 01 (ok)
+        // 01 (OK!)
 
         float height, minHeight = 1.50f;
 
@@ -452,13 +452,7 @@ class Program {
         }
 
         // Class 12 - Exercises
-        // 01
-        Escreva um programa que leia o código de um determinado produto e mostre a sua classificação. Utilize a tabela abaixo como referência:(Código - Descrição)
-        1 Alimento não-perecível
-        2 Alimento perecível
-        3 Vestuário
-        4 Limpeza
-        5 Cosmético
+        // 01 (OK!)
 
       int product;
 
@@ -571,7 +565,6 @@ class Program {
         }
 
     // 02 (OK!)
-    Vamos agora reutilizar o exercício 2 do tópico de if e else, vamos adaptar o código da seguinte forma, enquanto os valores digitados não formam triângulos, o programa deverá continuar na execução do código.
     
     float side1, side2, side3;
 
@@ -630,9 +623,7 @@ class Program {
     Console.WriteLine("Game Over");
 
     // Class 14 - Exercises
-    // 01
-
-    Faça um programa que simule a aceleração de dois carros de fórmula 1 que estão acelerando, o veículo 1 está inicialmente a 200 km/h e o veículo 2 a 180 km/h, a cada repetição o veículo 1 aumenta sua velocidade em 1 km/h, e o veículo 2 aumenta sua velocidade em 3 km/h, enquanto a velocidade do veículo 1 não for superior a do veículo 2 o programa deverá continuar a execução, assim que a velocidade de 2 for maior o ciclo de repetição deverá ser interrompido, a duração máxima é de 15 voltas.
+    // 01 (OK!)
 
     int velCar1, velCar2, lap;
 
@@ -653,5 +644,185 @@ class Program {
             Console.WriteLine("Car 2 wins the lap");
         }
     }
+
+
+
+    int velCar1 = 200;
+    int velCar2 = 180;
+    int laps = 0;
+
+    while (velCar1 <= velCar2 && laps < 15) {
+        velCar1++;
+        velCar2 += 3;
+        laps++;
+
+        Console.WriteLine("Lap " + laps);
+        Console.WriteLine("Car 1: " + velCar1 + " km/h");
+        Console.WriteLine("Car 2: " + velCar2 + " km/h");
+
+        if (velCar1 > velCar2) {
+            Console.WriteLine("Car 1 wins this lap!");
+        } else if (velCar2 > velCar1) {
+            Console.WriteLine("Car 2 wins this lap!");
+        }
+        Console.WriteLine();
     }
+
+    if (laps == 15) {
+        Console.WriteLine("Race ended: Max laps reached.");
+    } else {
+        Console.WriteLine("Race ended: Car 2's speed exceeded Car 1's.");
+    }
+
+    // Solved Exercise (14.1)
+    
+    int carro1 = 200, carro2 = 180, voltas = 15;
+
+    for (int i = 0; i < 15; i++)
+    {
+        if (carro2 > carro1)
+    {
+        Console.WriteLine("O carro foi ultrapassado");
+        break;
+    } else {
+        Console.WriteLine("Ainda não foi ultrapassado");
+    }
+        carro2 = carro2 + 3;
+        carro1 = carro1 + 1;
+    }
+
+
+    // 02 (OK!)
+
+    int grade1, grade2, grade3, grade4, grade5;
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine("Enter the grade: ");
+        grade1 = Int16.Parse(Console.ReadLine());
+        Console.WriteLine("The first grade is: " + grade1);
+        grade2 = Int16.Parse(Console.ReadLine());
+        Console.WriteLine("The second grade is: " + grade2);
+        grade3 = Int16.Parse(Console.ReadLine());
+        Console.WriteLine("The third grade is: " + grade3);
+        grade4 = Int16.Parse(Console.ReadLine());
+        Console.WriteLine("The fourd grade is: " + grade4);
+        grade5 = Int16.Parse(Console.ReadLine());
+        Console.WriteLine("The five grade is: " + grade5);
+        
+
+        if (grade1 < 0 || grade1 > 100 || grade2 < 0 || grade2 > 100 || grade3 < 0 || grade3 > 100 || grade4 < 0 || grade4 > 100 || grade5 < 0 || grade5 > 100)
+        {
+            Console.WriteLine("Invalid grade");
+        }
+
+        if (grade1 + grade2 + grade3 + grade4 + grade5 > 300)
+        {
+            Console.WriteLine("Approved");
+        } else {
+            Console.WriteLine("Disapproved");
+        }
+
+      }
+
+    // Solved Exercise (14.2)
+    float n1 = -1, n2 = -1, n3 = -1, n4 = -1, n5 = -1, nf = 0;
+    while (nf < 300)
+    {
+        while (n1 < 0 || n1 > 100)
+        {
+            Console.WriteLine("Digite a nota 1");
+            n1 = Int16.Parse(Console.ReadLine());  
+        }
+        nf= nf+n1;
+        while (n2 < 0 || n2 > 100)
+        {
+            Console.WriteLine("Digite a nota 2");
+            n2 = Int16.Parse(Console.ReadLine());
+        }
+        nf = nf+n2;
+        while (n3 < 0 || n3 > 100)
+        {
+            Console.WriteLine("Digite a nota 3");
+            n3 = Int16.Parse(Console.ReadLine());
+        }
+        nf = nf+n3;
+        if(nf >= 300){
+            Console.WriteLine("Aprovado");
+            break
+        }
+        while (n4 < 0 || n4 > 100)
+        {
+            Console.WriteLine("Digite a nota 4");
+            n4 = Int16.Parse(Console.ReadLine());
+        }
+        nf = nf+n4;
+        if(nf >= 300){
+            Console.WriteLine("Aprovado");
+            break
+        }
+        while (n5 < 0 || n5 > 100)
+        {
+            Console.WriteLine("Digite a nota 5");
+            n5 = Int16.Parse(Console.ReadLine());
+        }
+        nf = nf+n5;
+        if(nf >= 300){
+            Console.WriteLine("Aprovado");
+            break
+        }
+            Console.WriteLine("Reprovado");
+            break;
+        
+    }
+
+    // Class 15 - Functions
+    void
+    main
+
+    {
+    int a = 4, b = 5, c;
+    c = Program.soma(a, b);
+
+    writeSum(c);
+    //Console.WriteLine("The sum is " + c);
+    }
+
+    static int soma(int x, int y)
+    {
+        return x + y;
+    }
+
+    static void writeSum(int c)
+    {
+        Console.WriteLine("The sum is " + c);
+    }
+
+
+    // Class 15 - Exercises
+    // 01
+
+
+    float side1, side2, side3;
+
+
+    do {
+    Console.WriteLine("Enter side 1: ");
+    side1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Enter side 2: ");
+    side2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Enter side 3: ");
+    side3 = float.Parse(Console.ReadLine());
+    
+    if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+        Console.WriteLine("The measurements form a triangle! (The program will now end!!)");
+    } else {
+        Console.WriteLine("The measurements DO NOT form a triangle!");
+        }
+    } while (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1);
+
+
+    }   
 }
