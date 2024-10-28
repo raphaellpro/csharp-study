@@ -512,6 +512,146 @@ class Program {
       break;
       }
 
+    // Class 13 - Repetition Structures
 
+    int after = 0;
+    int endAfter = 10;
+
+    while(after <= endAfter)
+    {
+        Console.WriteLine("Your current position is: " + after)
+        pos++;
+    }
+
+    do {
+        Console.WriteLine("Your current position is: " + after)
+    } while (after <= endAfter);
+
+    int endAfter = 10;
+
+    for (int after = 0; after <= endAfter; after++)
+    {
+        Console.WriteLine("Your current position is " + after);
+    }
+
+    // Class 13 - Exercises
+    // 01 (OK!)
+
+        int product;
+        do {
+        Console.WriteLine("Enter the product code 1 - 5: ");
+        product = Int16.Parse(Console.ReadLine());
+
+        switch (product)
+        {
+            case 1:
+            Console.WriteLine("Non-perishable food");
+            break;
+            case 2:
+            Console.WriteLine("Perishable food");
+            break;
+            case 3:
+            Console.WriteLine("Clothing");
+            break;
+            case 4:
+            Console.WriteLine("Cleaning");
+            break;
+            case 5:
+            Console.WriteLine("Cosmetic");
+            break;
+            default:
+            Console.WriteLine("Invalid Code");
+            break;
+        }
+          
+        } while (product != 0);
+
+        if (product == 0) {
+          Console.WriteLine("You stopped the program");
+        }
+
+    // 02 (OK!)
+    Vamos agora reutilizar o exercício 2 do tópico de if e else, vamos adaptar o código da seguinte forma, enquanto os valores digitados não formam triângulos, o programa deverá continuar na execução do código.
+    
+    float side1, side2, side3;
+
+    do {
+    Console.WriteLine("Enter side 1: ");
+    side1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Enter side 2: ");
+    side2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Enter side 3: ");
+    side3 = float.Parse(Console.ReadLine());
+    
+        if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+            Console.WriteLine("The measurements form a triangle! (The program will now end!!)");
+        } else {
+            Console.WriteLine("The measurements DO NOT form a triangle!");
+            }
+        } while (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1);
+
+    // Solved Exercise (13.2)
+
+    float lado1 = 3, lado2 = 18, lado3 = 5;
+    while (lado1 > lado2 + lado3 && lado2 > lado1 + lado3 &&
+    lado3 > lado1 + lado2)
+    {
+    Console.WriteLine("Digite um dos lados do triângulo");
+    lado1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Digite um dos lados do triângulo");
+    lado2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Digite um dos lados do triângulo");
+    lado3 = float.Parse(Console.ReadLine());
+    }
+
+    // Class 14 - Flow Controllers
+    int pos = 0, endPos = 10, enemyPos = 6;
+
+    while (pos <= endPos)
+    {
+        pos++;
+
+        if (pos == itemPos)
+        {
+            Console.WriteLine("Item found.");
+            continue;
+        }
+
+        if (pos == enemyPos)
+        {
+            Console.WriteLine("Collision with enemy.");
+            break;
+        }
+        Console.WriteLine("Your current position is: " + pos);
+    }
+
+    Console.WriteLine("Game Over");
+
+    // Class 14 - Exercises
+    // 01
+
+    Faça um programa que simule a aceleração de dois carros de fórmula 1 que estão acelerando, o veículo 1 está inicialmente a 200 km/h e o veículo 2 a 180 km/h, a cada repetição o veículo 1 aumenta sua velocidade em 1 km/h, e o veículo 2 aumenta sua velocidade em 3 km/h, enquanto a velocidade do veículo 1 não for superior a do veículo 2 o programa deverá continuar a execução, assim que a velocidade de 2 for maior o ciclo de repetição deverá ser interrompido, a duração máxima é de 15 voltas.
+
+    int velCar1, velCar2, lap;
+
+    velCar1 = 200;
+    velCar2 = 180;
+    laps = 0;
+
+    while (velCar1 =< velCar2 && laps =< 15) {
+        velCar1++;
+        velCar2 += 3;
+        laps++;
+        Console.WriteLine("Car 1: " + velCar1 + " km/h");
+        Console.WriteLine("Car 2: " + velCar2 + " km/h");
+
+        if (velCar1 > velCar2) {
+            Console.WriteLine("Car 1 wins the lap");
+        } else if (velCar2 > velCar1) {
+            Console.WriteLine("Car 2 wins the lap");
+        }
+    }
     }
 }
