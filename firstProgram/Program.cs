@@ -800,29 +800,38 @@ class Program {
 
 
     // Class 15 - Exercises
-    // 01
+    // 01 (OK!)
+using System;
+
+    class Program {
+    public static void Main (string[] args) {
 
 
-    float side1, side2, side3;
+        float side1, side2, side3, perimeter;
 
+        Console.WriteLine("Enter side 1: ");
+        side1 = float.Parse(Console.ReadLine());
 
-    do {
-    Console.WriteLine("Enter side 1: ");
-    side1 = float.Parse(Console.ReadLine());
+        Console.WriteLine("Enter side 2: ");
+        side2 = float.Parse(Console.ReadLine());
 
-    Console.WriteLine("Enter side 2: ");
-    side2 = float.Parse(Console.ReadLine());
+        Console.WriteLine("Enter side 3: ");
+        side3 = float.Parse(Console.ReadLine());
 
-    Console.WriteLine("Enter side 3: ");
-    side3 = float.Parse(Console.ReadLine());
+        // Chama o método CalcPerimeter para calcular o perímetro
+        perimeter = CalcPerimeter(side1, side2, side3);
+
+        // Exibe o perímetro
+        Console.WriteLine("The perimeter is: " + perimeter);
+    }
+
+        // Método para calcular o perímetro
+    static float CalcPerimeter(float side1, float side2, float side3)
+    {
+        return side1 + side2 + side3;
+    }
     
-    if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
-        Console.WriteLine("The measurements form a triangle! (The program will now end!!)");
-    } else {
-        Console.WriteLine("The measurements DO NOT form a triangle!");
-        }
-    } while (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1);
-
-
+}
+    
     }   
 }
