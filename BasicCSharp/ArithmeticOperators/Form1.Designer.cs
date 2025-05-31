@@ -107,6 +107,7 @@
             this.btnSubtract.TabIndex = 7;
             this.btnSubtract.Text = "Subtract";
             this.btnSubtract.UseVisualStyleBackColor = true;
+            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btnMultiply
             // 
@@ -116,6 +117,7 @@
             this.btnMultiply.TabIndex = 8;
             this.btnMultiply.Text = "Multiply";
             this.btnMultiply.UseVisualStyleBackColor = true;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnToDivide
             // 
@@ -125,12 +127,13 @@
             this.btnToDivide.TabIndex = 9;
             this.btnToDivide.Text = "To Divide";
             this.btnToDivide.UseVisualStyleBackColor = true;
+            this.btnToDivide.Click += new System.EventHandler(this.btnToDivide_Click);
             // 
             // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 322);
+            this.ClientSize = new System.Drawing.Size(260, 171);
             this.Controls.Add(this.btnToDivide);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnSubtract);
